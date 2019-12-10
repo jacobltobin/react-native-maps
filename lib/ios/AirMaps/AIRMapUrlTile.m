@@ -83,6 +83,7 @@
         self.tileOverlay.tileSize = CGSizeMake(self.tileSize, self.tileSize);
     }
     self.renderer = [[MKTileOverlayRenderer alloc] initWithTileOverlay:self.tileOverlay];
+    self.renderer.alpha = 0.7;
 }
 
 - (void) update
